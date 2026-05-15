@@ -1,13 +1,13 @@
-Part,Quantity,Purpose,Approx Price (USD)
-ESP32 Dev Board,1,Main flight computer,8.00
-MPU6050,1,Acceleration and gyro sensing,4.00
-BMP280,1,Altitude and pressure sensing,3.00
-SD Card Module,1,Flight data logging,3.00
-MicroSD Card,1,Data storage,6.00
-AMS1117 3.3V Module,1,Voltage regulation,2.00
-LiPo Battery,2,Portable power supply,12.00
-Male to Female Jumper Wires,1 set,Sensor connections,3.00
-Male to Male Jumper Wires,1 set,Internal wiring,2.00
-M3 Standoffs,8,Structural support,4.00
-M3 Screws,16,Assembly fastening,2.00
-OLED SSD1306 Display,1,Live telemetry display,6.00
+Part,Quantity,Purpose,Approx Price (USD),links
+ESP32 Dev Board,1,Main flight computer,8.00,https://www.amazon.in/SquadPixel-ESP-32-Bluetooth-Development-Board/dp/B071XP56LM?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=AJ6SIZC8YQDZX
+MPU6050,1,Acceleration and gyro sensing,4.00,https://robu.in/product/mpu-6050-gyro-sensor-2-accelerometer/
+BMP280,1,Altitude and pressure sensing,3.00,https://robu.in/product/bmp280-barometric-pressure-and-altitude-sensor-i2c-spi-module/
+SD Card Module,1,Flight data logging,3.00,https://robu.in/product/sd-card-reading-writing-module-arduino/
+MicroSD Card,1,Data storage,6.00,https://robu.in/product/sd-card-reading-writing-module-arduino/
+AMS1117 3.3V Module,1,Voltage regulation,2.00,https://robu.in/product/ams1117-3-3v-power-supply-module/
+LiPo Battery,2,Portable power supply,12.00,https://www.amazon.in/Electronic-Spices-Rechargeable-Battery-HYC-401020/dp/B0D9JNJ3V2
+Male to Female Jumper Wires,1 set,Sensor connections,3.00,https://robu.in/product/male-to-female-jumper-wires-40-pin-30cm/
+Male to Male Jumper Wires,1 set,Internal wiring,2.00,https://robu.in/product/male-to-male-jumper-wires-40pcs-20cm/
+M3 Standoffs,8,Structural support,4.00,3D prined
+M3 Screws,16,Assembly fastening,2.00,3D prined
+OLED SSD1306 Display,1,Live telemetry display,6.00,https://www.amazon.in/ROBODUINO-0-96-Inch-OLED-DISPLAY/dp/B0D6NDPB7V
