@@ -1,0 +1,12 @@
+Part,Quantity,Purpose
+ESP32 Dev Board,1,Main flight computer
+MPU6050,1,Acceleration and gyro sensing
+BMP280,1,Altitude and pressure sensing
+SD Card Module,1,Flight data logging
+MicroSD Card,1,Data storage
+AMS1117 3.3V Module,1,Voltage regulation
+LiPo Battery,2,Portable power supply
+Male to Female Jumper Wires,1 set,Sensor connections
+Male to Male Jumper Wires,1 set,Internal wiring
+M3 Standoffs,8,Structural support
+M3 Screws,16,Assembly fastening
