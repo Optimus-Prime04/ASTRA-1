@@ -96,7 +96,7 @@ This project is helping me learn:
 - Wireless telemetry
 - Compact avionics enclosure
 - Real flight testing
-
+<img width="1024" height="1536" alt="Image" src="https://github.com/user-attachments/assets/11cc2234-69c7-493c-beef-e8dc3b697e30" />
 ---
 
 # Repository Structure
