@@ -83,11 +83,8 @@ This project is helping me learn:
 # Current Progress
 
 - ESP32 simulation setup completed
-- Sensor integration completed
-- Telemetry display working
-- SD card logging working
-- Firmware testing in progress
-- Planning PCB and enclosure design
+- CAD
+- Ordered the parts needed
 
 ---
 
