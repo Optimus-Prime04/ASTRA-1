@@ -13,10 +13,10 @@ I started this project because I wanted to learn more about aerospace avionics s
 - Altitude sensing using BMP280/BME280
 - Motion and acceleration sensing using MPU6050
 - Launch detection logic
-- OLED telemetry display
 - SD card flight-data logging
 - ESP32-based embedded system
-- Modular hardware setup
+- Modular stacked hardware setup
+- USB powered development mode
 
 ---
 
@@ -25,78 +25,12 @@ I started this project because I wanted to learn more about aerospace avionics s
 - ESP32 Dev Board
 - MPU6050 IMU Sensor
 - BMP280/BME280 Sensor
-- OLED SSD1306 Display
 - SD Card Module
-- LEDs
-- Buzzer
-- Breadboard and jumper wires
+- AMS1117 3.3V Module
+- Jumper wires
+- LiPo batteries
+- M3 standoffs and screws
 
----
-
-# How It Works
-
-The ESP32 reads data from the sensors using I2C communication. The altitude sensor measures pressure-based altitude while the MPU6050 tracks acceleration and movement.
-
-The system processes this data and:
-- displays telemetry on the OLED screen
-- detects launch-like movement
-- stores data onto the SD card
-
----
-
-# Wiring Overview
-
-## MPU6050
-- SDA → GPIO21
-- SCL → GPIO22
-
-## BMP280/BME280
-- SDA → GPIO21
-- SCL → GPIO22
-
-## OLED Display
-- SDA → GPIO21
-- SCL → GPIO22
-
-## SD Card Module
-- CS → GPIO5
-- SCK → GPIO18
-- MISO → GPIO19
-- MOSI → GPIO23
-
----
-
-# Why I Made This
-
-I wanted to create a low-cost student aerospace project that combines electronics, programming, and embedded systems into a real working prototype.
-
-This project is helping me learn:
-- embedded programming
-- avionics basics
-- telemetry systems
-- sensor integration
-- hardware debugging
-- aerospace engineering concepts
-
----
-
-# Current Progress
-
-- ESP32 simulation setup completed
-- CAD
-- Ordered the parts needed
-
----
-
-# Future Plans
-
-- Custom PCB
-- Better launch detection
-- GPS integration
-- Wireless telemetry
-- Compact avionics enclosure
-- Real flight testing
-<img width="1024" height="1536" alt="Image" src="https://github.com/user-attachments/assets/11cc2234-69c7-493c-beef-e8dc3b697e30" />
 ---
 
 # Repository Structure
@@ -111,3 +45,186 @@ bom/
 docs/
 devlogs/
 media/
+assets/
+```
+
+---
+
+# Build Guide
+
+## Step 1 — Assemble the Frame
+
+- Print or manufacture the CAD frame plates.
+- Use M3 standoffs and screws to assemble the stacked structure.
+- Install the electronics layer-by-layer.
+
+## Step 2 — Connect Electronics
+
+Use the wiring diagram inside:
+
+```txt
+wiring/
+```
+
+Main sensor wiring:
+
+### MPU6050
+- VCC → 3.3V
+- GND → GND
+- SDA → GPIO21
+- SCL → GPIO22
+
+### BMP280
+- VCC → 3.3V
+- GND → GND
+- SDA → GPIO21
+- SCL → GPIO22
+
+### SD Card Module
+- CS → GPIO5
+- SCK → GPIO18
+- MISO → GPIO19
+- MOSI → GPIO23
+
+---
+
+# Firmware Setup
+
+## Install Arduino IDE
+
+Download Arduino IDE and install ESP32 board support.
+
+## Required Libraries
+
+Install:
+
+- Adafruit MPU6050
+- Adafruit BMP280
+- SPI
+- SD
+- Wire
+
+Library list is included inside:
+
+```txt
+firmware/libraries.txt
+```
+
+---
+
+# Flashing Instructions
+
+1. Connect ESP32 to laptop using USB-C.
+2. Open:
+
+```txt
+firmware/main.ino
+```
+
+3. Select ESP32 board.
+4. Select correct COM port.
+5. Upload firmware.
+6. Open Serial Monitor at:
+
+```txt
+115200 baud
+```
+
+---
+
+# How It Works
+
+The ESP32 reads telemetry data from the MPU6050 and BMP280 sensors using I2C communication.
+
+The system:
+
+- measures acceleration
+- measures altitude
+- logs flight data
+- stores telemetry on microSD card
+- outputs live serial telemetry
+
+---
+
+# CAD and Mechanical Design
+
+CAD files and renders are inside:
+
+```txt
+cad/
+```
+
+This includes:
+
+- STEP exports
+- Fusion source files
+- rendered views
+- assembly structure
+
+---
+
+# BOM
+
+Complete Bill of Materials:
+
+```txt
+bom/BOM.csv
+```
+
+Includes:
+
+- quantities
+- estimated prices
+- purchase links
+
+---
+
+# Documentation
+
+Additional documentation:
+
+```txt
+docs/
+```
+
+Includes:
+
+- safety notes
+- repository layout
+- build documentation
+
+---
+
+# Devlogs
+
+Development logs and progress tracking:
+
+```txt
+devlogs/
+```
+
+---
+
+# Why I Made This
+
+I wanted to create a low-cost student aerospace project that combines electronics, programming, embedded systems, and CAD design into a real working avionics prototype.
+
+This project is helping me learn:
+
+- embedded systems
+- avionics basics
+- telemetry systems
+- sensor integration
+- firmware development
+- aerospace engineering concepts
+
+---
+
+# Future Plans
+
+- Custom PCB
+- GPS integration
+- Wireless telemetry
+- Flight stabilization
+- Real rocket flight testing
+- Smaller avionics stack
