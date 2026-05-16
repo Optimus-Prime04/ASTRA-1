@@ -5,7 +5,7 @@ ASTRA-1 is a student-built autonomous rocket flight computer made for aerospace 
 This project uses an ESP32 with onboard sensors to measure altitude, acceleration, and movement during flight simulations. The system can display live telemetry data and store flight logs on an SD card for later analysis.
 
 I started this project because I wanted to learn more about aerospace avionics systems and how real flight computers work. Instead of only learning theory, I wanted to build a working embedded system myself and understand how sensors, telemetry, and flight logic are integrated together.
-
+<img width="1024" height="1536" alt="Image" src="https://github.com/user-attachments/assets/fa87fd77-d513-453c-bc50-57a01451b9bb" />
 ---
 
 # Features
