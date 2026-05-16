@@ -12,13 +12,4 @@
 - schematics/ → circuit schematics
 - wiring/ → wiring diagrams and pin mapping
 
-## Naming Rules
 
-- Use lowercase file names
-- Use hyphens instead of spaces
-- Avoid double extensions
-
-Examples:
-- astra1-sideview.png
-- astra1-assembly.step
-- astra1-zine-page.png
